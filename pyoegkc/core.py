@@ -34,3 +34,5 @@ class Converter:
         else:
             return code
 
+    def __getitem__(self, code):
+        return self.convert(code)
