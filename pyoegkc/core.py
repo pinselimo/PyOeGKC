@@ -30,7 +30,7 @@ class Converter:
     def convert(self, code):
         for d in self._dicts:
             if code in d:
-                return self.convert(self.d[code])
+                return self.convert(d[code])
         else:
             return code
 
