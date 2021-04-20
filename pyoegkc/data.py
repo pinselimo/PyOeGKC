@@ -11,12 +11,14 @@ def load_municipality_merges():
     changes_2017 = path.join(DATADIR, "changes_municipalities_2017.csv")
     merges_2018 = path.join(DATADIR, "merges_municipalities_2018.csv")
     merges_2019 = path.join(DATADIR, "merges_municipalities_2019.csv")
+    changes_2020 = path.join(DATADIR, "changes_municipalities_2020.csv")
     return {
             **_load_merges_from(merges_2013)
           , **_load_merges_from(merges_2015)
           , **_load_merges_from(changes_2017)
           , **_load_merges_from(merges_2018)
           , **_load_merges_from(merges_2019)
+          , **_load_merges_from(changes_2020)
           }
 
 def load_municipality_splits():
