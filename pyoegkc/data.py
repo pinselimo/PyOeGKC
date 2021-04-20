@@ -33,7 +33,7 @@ def _load_merges_from(filename):
     with open(filename, 'r') as f:
         header = f.readline()
         d = dict()
-        for line in f.readline():
+        for line in f.readlines():
             pre,post = line.split(SEPARATOR)
             d[int(pre)] = int(post)
         return d
@@ -43,5 +43,5 @@ def _load_splits_from(filename):
         header = f.readline()
         return [
             tuple(map(int,line.split(SEPARATOR)))
-            for line in f.readline()
+            for line in f.readlines()
             ]
