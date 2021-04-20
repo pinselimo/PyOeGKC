@@ -42,6 +42,6 @@ def _load_splits_from(filename):
     with open(filename, 'r') as f:
         header = f.readline()
         return [
-            line.split(SEPARATOR)
+            tuple(map(int,line.split(SEPARATOR)))
             for line in f.readline()
             ]
