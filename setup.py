@@ -32,6 +32,8 @@ setup(
     platforms="any",
     packages=["pyoegkc"],
     package_dir={"pyoegkc": "pyoegkc"},
+    package_data= {"pyoegkc":["data/*.csv"]},
+    include_package_data=True,
     install_requires=INSTALL_REQUIRES,
     python_requires=">=3.5",
     classifiers=CLASSIFIERS,
