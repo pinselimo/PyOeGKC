@@ -27,8 +27,8 @@ def load_municipality_splits():
     return _load_splits_from(splits_2015) + _load_splits_from(splits_2020)
 
 def load_district_merges():
-    merges_2012 = path.join(DATADIR, "merges_districts_2012.csv")
-    merges_2013 = path.join(DATADIR, "merges_districts_2013.csv")
+    merges_2012 = path.join(DATADIR, "merges_counties_2012.csv")
+    merges_2013 = path.join(DATADIR, "merges_counties_2013.csv")
     return {**_load_merges_from(merges_2012), **_load_merges_from(merges_2013)}
 
 def _load_merges_from(filename):
