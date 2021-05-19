@@ -1,5 +1,7 @@
 # Converter for Austrian municipality codes
 
+**[English][en]** - [Deutsch][de]
+
 Every municipality in Austria receives a code number. Unfortunately, these change every other year as politicians do their thing.
 
 The data is only available in diffused PDFs and some excel sheets, making it hard to track these changes. This library contains the changes in a trackable format. It also defines its own converter and conversion strategies for disambiguation.
